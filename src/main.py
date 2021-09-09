@@ -45,7 +45,7 @@ async def tweet(text: Optional[str]=None):
 	try:
 		img = Image.open("./blank.png")
 	except Exception:
-		blank = requests.get("https://twitter.com/MhdFajis/status/1433960767435378689?t=sEN0ckxvo8Xy6LnWf-typw&s=19")
+		blank = requests.get("https://telegra.ph/file/3b38e6d7a8b648c753986.jpg")
 		with open("blank.png","wb") as f:
 			f.write(blank.content)
 			f.close()

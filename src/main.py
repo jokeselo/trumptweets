@@ -45,7 +45,7 @@ async def tweet(text: Optional[str]=None):
 	try:
 		img = Image.open("./blank.png")
 	except Exception:
-		blank = requests.get("https://telegra.ph/file/3b38e6d7a8b648c753986.jpg")
+		blank = requests.get("https://firebasestorage.googleapis.com/v0/b/faketrumptweets-8c438.appspot.com/o/blank-2.png?alt=media&token=79366004-9c55-4c2b-b0aa-a970bf4c2b06")
 		with open("blank.png","wb") as f:
 			f.write(blank.content)
 			f.close()
